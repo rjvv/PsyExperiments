@@ -37,21 +37,34 @@ if state of Circle(dynamic panel) equals GreenLeft/GreenRight && response = F: \
 \
 experiment_state: response allowed(1), response not allowed(0)\
 \
+Number of correct responses:\
+Green Same Side: [[Green_Left_Correct]]\
+Green Opposite Side: [[Green_Right_Correct]]\
+Red Same Side: [[Red_Right_Correct]]\
+Red Opposite Side: [[Red_Left_Correct]]\
 \
-Green Left:\
-Correct: [[Green_Left_Correct]]\
-Mistakes: [[Green_Left_Mistake]]\
+Total number of correct responses:\
+[[Green_Left_Correct+ Green_Right_Correct+ Red_Left_Correct+ Red_Right_Correct]]\
 \
-Green Right:\
-Correct: [[Green_Right_Correct]]\
-Mistakes: [[Green_Right_Mistake]]\
+Number of incorrect responses (not counted in correct responses): [[Red_Left_Mistake + Green_Right_Mistake+ Red_Right_Mistake+ Green_Left_Mistake]]\
 \
-Red Left:\
-Correct: [[Red_Left_Correct]]\
-Mistakes: [[Red_Left_Mistake]]\
+total RT\'92s for correct responses:\
+Green Same Side: [[t_GreenLeft]]\
+Green Opposite Side: [[t_GreenRight]]\
+Red Same Side: [[t_RedRight]]\
+Red Opposite Side: [[t_RedLeft]]\
 \
-Red Right:\
-Correct: [[Red_Right_Correct]]\
-Mistakes: [[Red_Right_Mistake]]\
+Average RT\'92s for correct responses:\
+Green Same Side: [[t_GreenLeft/Green_Left_Correct]]\
+Green Opposite Side: [[t_GreenRight/Green_Right_Correct]]\
+Red Same Side: [[t_RedRight/Red_Right_Correct]]\
+Red Opposite Side: [[t_RedLeft/Red_Left_Correct]]\
+\
+\
+after fixation 1000ms: timer = 0, show hiddenTimer. \
+Mouse response: log timer value to corresponding t_variable\
+\
+\
+\
 \
 }
